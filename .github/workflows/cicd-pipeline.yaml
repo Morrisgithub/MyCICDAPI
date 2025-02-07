@@ -19,3 +19,20 @@ jobs:
 
       - name: Build project  
         run: dotnet restore; dotnet build
+
+      - name: Build publish 
+        run:  dotnet publish -o site;
+
+      - name: create zip package
+        run: cd site; zip ../site.zip *;
+
+      - name: Deploy to aws EB
+        uses: einaregilsson/beanstalk-deploy@v21
+        with:
+          aws_access_key: ${{ AWS_ACCESS_KEY}}
+          aws_secret_key: ${{ AWS_SECRET_KEY_TOKEN }}
+          application_name: CICDAPI
+          environment_name: CICDAPI-env
+          version_label: ${{ github.run_id }}
+          region: eu-north-1
+          deployment_package: site.zip
