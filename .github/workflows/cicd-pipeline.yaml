@@ -30,7 +30,7 @@ jobs:
         uses: einaregilsson/beanstalk-deploy@v21
         with:
           aws_access_key: ${{ AWS_ACCESS_KEY}}
-          aws_secret_key: ${{ AWS_SECRET_KEY_TOKEN }}
+          aws_secret_key: ${{ AWS_SECRET_KEY }}
           application_name: CICDAPI
           environment_name: CICDAPI-env
           version_label: ${{ github.run_id }}
