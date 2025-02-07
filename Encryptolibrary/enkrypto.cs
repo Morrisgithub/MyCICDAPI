@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Encryptolibrary
 {
-    public class enkrypto
+    public class Enkrypto
     {
         public string Encrypt(string input, int shift)
         {
@@ -51,5 +51,4 @@ namespace Encryptolibrary
             return Encrypt(input, -shift);
         }
     }
-}
 }
