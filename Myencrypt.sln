@@ -5,6 +5,15 @@ VisualStudioVersion = 17.12.35707.178 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyencryptAPI", "MyencryptAPI\MyencryptAPI.csproj", "{BD7C35CB-B588-468F-AB2A-081D642D1265}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryptolibrary", "Encryptolibrary\Encryptolibrary.csproj", "{B7E5788D-F9D9-4B80-B021-9FF22360E6FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{75148CB1-8257-43BD-A178-7133658196EE}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\cicd-pipeline.yaml = .github\workflows\cicd-pipeline.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{CE747A4C-BEBB-499E-9640-D2B26449E907}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +24,15 @@ Global
 		{BD7C35CB-B588-468F-AB2A-081D642D1265}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD7C35CB-B588-468F-AB2A-081D642D1265}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD7C35CB-B588-468F-AB2A-081D642D1265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E5788D-F9D9-4B80-B021-9FF22360E6FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E5788D-F9D9-4B80-B021-9FF22360E6FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E5788D-F9D9-4B80-B021-9FF22360E6FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E5788D-F9D9-4B80-B021-9FF22360E6FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CE747A4C-BEBB-499E-9640-D2B26449E907} = {75148CB1-8257-43BD-A178-7133658196EE}
 	EndGlobalSection
 EndGlobal
