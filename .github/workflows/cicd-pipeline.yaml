@@ -15,7 +15,7 @@ jobs:
       - name: Setup dotnet
         uses: actions/setup-dotnet@v3
         with: 
-          dotnet-version: '9.0'
+          dotnet-version: '8.0'
 
       - name: Build project  
-        run: dotnet restore; dotnet publish -o site;
+        run: dotnet restore; dotnet build
