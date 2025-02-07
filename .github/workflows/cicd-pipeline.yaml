@@ -21,9 +21,8 @@ jobs:
         run: dotnet restore; dotnet build
 
       - name: Build and publish
-        working-directory: source/repos/Myencrypt/MyencryptAPI
-        run:
-            dotnet publish MyencryptAPI.csproj --configuration Release --output site
+        working-directory: MyencryptAPI
+        run: dotnet publish MyencryptAPI.csproj --configuration Release --output site
 
       - name: create zip package
         run: cd site; zip ../site.zip *;
