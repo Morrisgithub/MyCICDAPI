@@ -22,8 +22,7 @@ jobs:
 
       - name: Build and publish
         working-directory: source/repos/Myencrypt/MyencryptAPI
-        run: | 
-            dotnet restore
+        run:
             dotnet publish MyencryptAPI.csproj --configuration Release --output site
 
       - name: create zip package
